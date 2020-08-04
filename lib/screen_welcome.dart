@@ -1,4 +1,5 @@
 import 'package:calorist/screen_anketa.dart';
+import 'package:calorist/screen_anketa_category.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -7,7 +8,7 @@ class WelcomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     void nextStep(BuildContext ctx) {
       Navigator.of(ctx).push(MaterialPageRoute(
-        builder: (context) => MyAnketa(),
+        builder: (context) => MyAnketaCategory(),
       ));
     }
 

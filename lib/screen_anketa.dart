@@ -55,7 +55,7 @@ class _MyAnketaState extends State<MyAnketa> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("AnketaCategory"),
+        title: Text("Анкета"),
         actions: <Widget>[
           IconButton(
               icon: Icon(Icons.save), onPressed: () => _saveForm(context))
@@ -105,6 +105,7 @@ class _MyAnketaState extends State<MyAnketa> {
                   Row(
                     children: <Widget>[
                       Icon(Icons.account_circle),
+                      Text("M"),
                       Radio(
                         value: 1,
                         groupValue: group,
@@ -115,6 +116,7 @@ class _MyAnketaState extends State<MyAnketa> {
                           });
                         },
                       ),
+                      Text("Ж"),
                       Radio(
                         value: 2,
                         groupValue: group,
