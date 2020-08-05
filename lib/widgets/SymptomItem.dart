@@ -15,11 +15,10 @@ class _SymptomItemState extends State<SymptomItem> {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
-          title: new Expanded(
-              child: new Text(
+          title: new Text(
             symptom.name,
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-          )),
+          ),
           trailing: new Checkbox(
               value: symptom.isCheck,
               onChanged: (bool value) {
