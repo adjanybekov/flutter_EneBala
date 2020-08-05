@@ -27,7 +27,8 @@ class _RecommendationItemState extends State<RecommendationItem> {
       borderRadius: BorderRadius.circular(10),
       color: Colors.amber,
       image: DecorationImage(
-          fit: BoxFit.cover, image: NetworkImage(recommendation.imageUrl)),
+          fit: BoxFit.cover,
+          image: AssetImage("assets/images/" + recommendation.imageUrl)),
     ));
     // return ListTile(
     //     title: Row(

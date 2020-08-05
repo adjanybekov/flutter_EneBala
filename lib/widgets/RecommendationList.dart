@@ -15,22 +15,16 @@ class RecommendationList extends StatefulWidget {
 
 class _RecommendationListState extends State<RecommendationList> {
   final List<Recommendation> recommendations = [
-    Recommendation("Каша гречневая", "false",
-        "https://www.gastronom.ru/binfiles/images/20150212/b7f594cb.jpg"),
-    Recommendation("Яблоко зеленое", "false",
-        "https://static6.depositphotos.com/1001686/624/i/450/depositphotos_6248705-stock-photo-green-apple-isolated-on-white.jpg"),
-    Recommendation("Уха из форели", "false",
-        "https://vilkin.pro/wp-content/uploads/2019/06/uxa-iz-foreli-770x513.jpg"),
-    Recommendation("Пюре с котлетой на пару", "false",
-        "https://static.1000.menu/img/content/36147/kotlety-s-garnirom_1561320552_11_max.jpg"),
-    Recommendation("Соленые огурцы", "false",
-        "https://img.povar.ru/main/db/71/58/51/solenie_ogurci_hrustyashie-64456.jpg"),
-    Recommendation("Кукуруза вереная", "false",
-        "https://static.1000.menu/img/content/3472/varenaya-kukuruza_1351448549_5_max.jpg"),
-    Recommendation("Кымыз", "false",
-        "https://cbtkyrgyzstan.kg/wp-content/uploads/2020/01/Kymyz-festival.jpg"),
-    Recommendation("Куриный бульон", "false",
-        "https://s8.cdn.teleprogramma.pro/wp-content/uploads/2018/01/f59874fb86a51d2cb94f5ede13ffa923.jpg"),
+    Recommendation("Каша гречневая", "false", "grechka.jpg"),
+    Recommendation("Яблоко зеленое", "false", "yabloko.jpg"),
+    Recommendation("Уха из форели", "false", "uha.jpg"),
+    Recommendation("Пюре с котлетой на пару", "false", "kotlety.jpg"),
+    Recommendation("Соленые огурцы", "false", "ogurcy.jpg"),
+    Recommendation("Кукуруза вереная", "false", "kukuruza.jpg"),
+    Recommendation("Кымыз", "false", "kymyz.jpg"),
+    Recommendation("Куриный бульон", "false", "kurinyiSup.jpg"),
+    Recommendation("Каша гречневая", "false", "grechka.jpg"),
+    Recommendation("Уха из форели", "false", "uha.jpg"),
   ];
 
   @override

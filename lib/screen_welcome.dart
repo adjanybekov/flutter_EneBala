@@ -14,7 +14,12 @@ class WelcomeScreen extends StatelessWidget {
 
     return Scaffold(
         appBar: AppBar(
-          title: Text("Добро пожаловать в EneBala!"),
+          centerTitle: true,
+          title: Text(
+            "Эне-Бала",
+            style: TextStyle(fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
+          ),
         ),
         body: Center(
           child: Column(
