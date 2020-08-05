@@ -16,8 +16,8 @@ class _ImageInputState extends State<ImageInput> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 100,
-      height: 100,
+      width: double.infinity,
+      height: 250,
       decoration:
           BoxDecoration(border: Border.all(width: 1, color: Colors.grey)),
       child: _storedImage != null

@@ -31,13 +31,14 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Рекоммендации"),
+        automaticallyImplyLeading: false,
       ),
       body: Container(
         child: RecommendationList(),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _takePicture,
-        child: Icon(Icons.camera),
+        child: Icon(Icons.fastfood),
         backgroundColor: Colors.green,
       ),
     );

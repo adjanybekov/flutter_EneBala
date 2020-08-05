@@ -13,18 +13,20 @@ class _SymptomItemState extends State<SymptomItem> {
   _SymptomItemState(this.symptom);
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-        title: new Row(
-      children: <Widget>[
-        new Expanded(child: new Text(symptom.name)),
-        new Checkbox(
-            value: symptom.isCheck,
-            onChanged: (bool value) {
-              setState(() {
-                symptom.isCheck = value;
-              });
-            })
-      ],
-    ));
+    return Card(
+      child: ListTile(
+          title: new Expanded(
+              child: new Text(
+            symptom.name,
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+          )),
+          trailing: new Checkbox(
+              value: symptom.isCheck,
+              onChanged: (bool value) {
+                setState(() {
+                  symptom.isCheck = value;
+                });
+              })),
+    );
   }
 }

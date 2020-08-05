@@ -15,12 +15,26 @@ class _RecommendationItemState extends State<RecommendationItem> {
   _RecommendationItemState(this.recommendation);
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-        title: new Row(
-      children: <Widget>[
-        new Expanded(child: new Text(recommendation.name)),
-        new Expanded(child: new Text(recommendation.content)),
-      ],
+    return Container(
+        // padding: EdgeInsets.all(15),
+        // child: Image(
+        //   image: AssetImage("assets/images/welcome3.jpg"),
+        //   // height: double.infinity,
+        //   // width: double.infinity,
+        //   fit: BoxFit.fill,
+        // ),
+        decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(10),
+      color: Colors.amber,
+      image: DecorationImage(
+          fit: BoxFit.cover, image: NetworkImage(recommendation.imageUrl)),
     ));
+    // return ListTile(
+    //     title: Row(
+    //   children: <Widget>[
+    //     new Expanded(child: new Text(recommendation.name)),
+    //     new Expanded(child: new Text(recommendation.content)),
+    //   ],
+    // ));
   }
 }

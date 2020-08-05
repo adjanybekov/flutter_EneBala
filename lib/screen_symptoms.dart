@@ -21,7 +21,7 @@ class _SymptomScreenState extends State<SymptomScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("ZYMBTOMS"),
+        title: Text("Симптомы"),
         actions: <Widget>[
           IconButton(
               icon: Icon(Icons.save), onPressed: () => _saveForm(context))

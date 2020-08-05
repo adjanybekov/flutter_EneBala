@@ -13,26 +13,26 @@ class SymptomList extends StatefulWidget {
 
 class _SymptomListState extends State<SymptomList> {
   final List<Symptom> symptoms = [
-    Symptom("name", false),
-    Symptom("name", false),
-    Symptom("name", false),
-    Symptom("name", false),
-    Symptom("name", false),
-    Symptom("name", false),
-    Symptom("name", false),
-    Symptom("name", false),
+    Symptom("Слабость", false),
+    Symptom("Быстрая утомляемость", false),
+    Symptom("Наррушения сна-бессоница", false),
+    Symptom("Головные боли", false),
+    Symptom("Головокружение", false),
+    Symptom("Шум в ушах", false),
+    Symptom("Одышка", false),
+    Symptom("Сердцебиение", false),
+    Symptom("Обморок", false),
+    Symptom("Сухость + трескание кожи", false),
+    Symptom("Воспаление коймы губ", false),
+    Symptom("Ломкие слоящиеся ногти", false),
+    Symptom("Сухие ломкие волосы", false),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        child: Column(
-          children: <Widget>[
-            Expanded(
-                child: ListView(
-              children: symptoms.map((Symptom s) => SymptomItem(s)).toList(),
-            ))
-          ],
+        child: ListView(
+          children: symptoms.map((Symptom s) => SymptomItem(s)).toList(),
         ),
         padding: EdgeInsets.all(10));
   }
